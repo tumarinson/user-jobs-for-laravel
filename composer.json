@@ -1,0 +1,40 @@
+{
+    "name": "tumarinson/laravel-user-jobs",
+    "description": "User jobs for laravel",
+    "keywords": [
+        "laravel",
+        "jobs",
+        "user"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitriy Tumarinson",
+            "email": "tumarinsond@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0|^8.1",
+        "illuminate/database": "^7.0|^8.0|^9.0",
+        "illuminate/support": "^7.0|^8.0|^9.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Tumarinson\\UserJobs\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tumarinson\\UserJobs\\UserJobServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
