@@ -8,8 +8,8 @@ class UserJobServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'user-jobs');
+        $this->loadTranslationsFrom(__DIR__.'/lang', 'user-jobs');
 
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
 }
