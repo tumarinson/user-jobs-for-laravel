@@ -13,7 +13,7 @@ you can display to the user the entire list of tasks that were created by him.
 You can see example of usage at 'example' folder.
 A demo project will be created if the package is in demand.
 
-## #Usage example
+### Usage example
 
 User Story: Users want to see in the interface a list of when and which reports they have uploaded.
 
