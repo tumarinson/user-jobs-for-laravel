@@ -1,8 +1,9 @@
-#Laravel User Jobs
+# Laravel User Jobs
 
 This package will help you if you need to complete some task created by the user, 
 after completing this task, 
 you can display to the user the entire list of tasks that were created by him.
+
 
 ##Installation
 You can install the package via composer:
@@ -17,11 +18,11 @@ php artisan vendor:publish --tag=laravel-user-jobs-migrations
 php artisan migrate
 ```
 
-##Usage
+## Usage
 You can see example of usage at 'example' folder.
 A demo project will be created if the package is in demand.
 
-###Usage example
+### Usage example
 
 User Story: Users want to see in the interface a list of when and which reports they have uploaded.
 
@@ -29,7 +30,7 @@ All you need is to extend your job class with AbstractUserJob.php and when creat
 
 <code>$job = new UserJobExample($userId);</code>
 
-##Translations
+## Translations
 Package has translation of job statuses
 
 <code>trans('user-jobs::job.status.waiting')</code>
