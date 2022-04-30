@@ -8,8 +8,14 @@ class UserJobServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__.'/lang', 'user-jobs');
+        $this->publishes([
+            __DIR__.'/lang' => lang_path(''),
+            'laravel-user-jobs-lang'
+        ]);
 
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->publishes([
+            __DIR__.'/database/migrations' => database_path('migrations'),
+            'laravel-user-jobs-migrations'
+        ]);
     }
 }

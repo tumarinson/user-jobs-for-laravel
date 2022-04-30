@@ -5,9 +5,17 @@ after completing this task,
 you can display to the user the entire list of tasks that were created by him.
 
 ##Installation
-1) composer require tumarinson/laravel-user-jobs
-2) php artisan migrate
-3) that's all
+You can install the package via composer:
+```bash
+composer require tumarinson/laravel-user-jobs
+```
+
+Then run a commands
+```bash
+php artisan vendor:publish --tag=laravel-user-jobs-lang
+php artisan vendor:publish --tag=laravel-user-jobs-migrations
+php artisan migrate
+```
 
 ##Usage
 You can see example of usage at 'example' folder.
