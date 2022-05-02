@@ -21,6 +21,7 @@ class CreateUserJobsTable extends Migration
             $table->decimal('progress')->nullable();
             $table->longText('payload')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
