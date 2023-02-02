@@ -27,7 +27,7 @@ php artisan migrate
 ```
 
 ## Example
-https://github.com/tumarinson/laravel-user-jobs-example
+https://github.com/tumarinson/user-jobs-for-laravel-example
 
 ## Translations
 Package has translation of job statuses
